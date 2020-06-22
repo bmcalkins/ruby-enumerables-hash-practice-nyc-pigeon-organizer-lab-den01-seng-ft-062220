@@ -1,6 +1,6 @@
 def nyc_pigeon_organizer(data)
   hash = {}
-  final_results = data.each_with_object(hash) do |(key, value), final_array|
+ data.each_with_object(hash) do |(key, value), final_array|
    # puts(value, final_array)
     value.each do |inner_key, names|
       #puts(inner_key, names)
